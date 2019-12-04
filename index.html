@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "a b c"
+                                 "d e f";
+        }
+
+        .box-a {
+            grid-area: a;
+        }
+
+        .box-b {
+            grid-area: b;
+        }
+
+        .box-c {
+            grid-area: c;
+        }
+
+        .box-d {
+            grid-area: d;
+        }
+
+        .box-e {
+            grid-area: e;
+        }
+
+        .box-f {
+            grid-area: f;
+        }
+    </style>
+</body>
+</html>
