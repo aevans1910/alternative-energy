@@ -9,11 +9,19 @@
 <body>
     <div class="container">
         <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 
     <style>
         .container {
             display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px 10px;
             grid-template-areas: "a b c"
                                  "d e f";
         }
