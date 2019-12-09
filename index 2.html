@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slideshow</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Developer styles */
+        #slides {
+            border: 2px solid black;
+            width: 1200px;
+            height: 400px;
+            margin: auto;
+        }
+    
+        #slides-2 {
+            border: 2px solid black;
+            width: 300px;
+            height: 169px;;
+        }
+    </style>
+</head>
+<body>
+    <div id="slides" class="slide-show slideshow" data-delay="3000" data-transition="400">
+        <div class="slides-inner">
+            <img src="images/bee-1200-400.jpg" width="1200" height="400" alt="bee">
+            <img src="images/beetle-1200-400.jpg" width="1200" height="400" alt="beetle">
+            <img src="images/dandelion-1200-400.jpg" width="1200" height="400" alt="dandelion">
+            <img src="images/ladybug-1200-400.jpg" width="1200" height="400" alt="ladybug">
+        </div>
+    </div>
+
+    <div id="slides-2" class="slide-show slideshow" data-delay="4000" data-transition="2000">
+        <div class="slides-inner">
+            <img src="images/hellebore-pollen-300-169.jpg" width="300" height="169" atl="hellbore">
+            <img src="images/li-pollen-300-169.jpg" width="300" height="169" atl="li pollen">
+            <img src="images/pollen-300-169.jpg" width="300" height="169" atl="pollen">
+            <img src="images/spores-300-169.jpg" width="300" height="169" atl="spores">
+            <img src="images/zsa-300-169.jpg" width="300" height="169" atl="zsa">
+        </div>
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script>
+        // Other code
+    </script>
+</body>
+</html>

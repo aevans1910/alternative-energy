@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
+    <div class="navbar">
+
+    </div>
+
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
@@ -22,8 +26,9 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 100px 100px;
             grid-gap: 10px 10px;
-            grid-template-areas: "a b c"
-                                 "d e f";
+            grid-template-areas: "a a a"
+                                 "b b b"
+                                 "c c c";
         }
 
         .box-a {
@@ -50,5 +55,34 @@
             grid-area: f;
         }
     </style>
+
+    <div id="slides" class="slide-show slideshow" data-delay="3000" data-transition="400">
+        <div class="slides-inner">
+            <img src="images/Geothermal.jpg" width="1200" height="400" alt="Geothermal">
+            <img src="images/beetle-1200-400.jpg" width="1200" height="400" alt="beetle">
+            <img src="images/dandelion-1200-400.jpg" width="1200" height="400" alt="dandelion">
+            <img src="images/ladybug-1200-400.jpg" width="1200" height="400" alt="ladybug">
+        </div>
+    </div>
+
+    <div id="slides-2" class="slide-show slideshow" data-delay="3000" data-transition="400">
+        <div class="slides-inner">
+            <img src="images/Hydro.jpg" width="1200" height="400" alt="Hydro">
+            <img src="images/beetle-1200-400.jpg" width="1200" height="400" alt="beetle">
+            <img src="images/dandelion-1200-400.jpg" width="1200" height="400" alt="dandelion">
+            <img src="images/ladybug-1200-400.jpg" width="1200" height="400" alt="ladybug">
+        </div>
+    </div>
+
+    <div id="slides-3" class="slide-show slideshow" data-delay="3000" data-transition="400">
+        <div class="slides-inner">
+            <img src="images/Solar.jpg" width="1200" height="400" alt="Solar">
+            <img src="images/beetle-1200-400.jpg" width="1200" height="400" alt="beetle">
+            <img src="images/dandelion-1200-400.jpg" width="1200" height="400" alt="dandelion">
+            <img src="images/ladybug-1200-400.jpg" width="1200" height="400" alt="ladybug">
+        </div>
+    </div>
+
+    <script src="slideshow.js"></script>
 </body>
 </html>
