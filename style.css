@@ -39,6 +39,7 @@
             justify-content: center;
             color: black;
         }
+
 /* Styling for home page */
     /* Slide show styles */
         .slides-inner {
@@ -92,3 +93,33 @@
             background-color: rgba(255, 255, 255, 0.5);
         }
     
+
+    /* Here is the styiling for the grid */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 400px 400px 400px;
+            grid-gap: 10px 10px;
+            grid-template-areas: "a a a"
+                                "b b b"
+                                "c c c";
+        }
+
+        .box-geo {
+            grid-area: a;
+        }
+
+        .box-hydro {
+            grid-area: b;
+        }
+
+        .box-solar {
+            grid-area: c;
+        }
+
+/* Styling for the quiz page */
+    #quiz {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
