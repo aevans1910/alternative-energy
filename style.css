@@ -1,16 +1,94 @@
-/* Slide show styles */
-    .slides-inner {
+ /* General styling for both pages*/
+    body {
         display: flex;
-        flex-direction: row;
-        position: absolute;
-        transform: translate3d(0, 0, 0);
-        transition: 1000ms;
+        justify-content: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.5em;
     }
 
-    .slide-show {
-        overflow: hidden;
-        position: relative;
-    }
+    /* Here is style for the navigation bar */
+        .Navbar {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
 
-/* All pages style */
-    /* font-family: 'Sulphur Point', sans-serif; */
+        .Buttons {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .Buttons > .nav-item {
+            margin: 1.5em;
+            text-decoration: none;
+            color: black;
+        }
+
+    /* Here is styling for the jumbotron */
+        #jumbotron > .text > h1{
+            display: flex;
+            justify-content: center;
+        }
+
+        #jumbotron > .text > h3{
+            display: flex;
+            justify-content: center;
+            color: black;
+        }
+/* Styling for home page */
+    /* Slide show styles */
+        .slides-inner {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            transform: translate3d(0, 0, 0);
+            transition: 1000ms;
+        }
+
+        .slide-show {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .ms-next-button, .ms-prev-button {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .ms-next-button {
+            right: 1em;
+        }
+
+        .ms-prev-button {
+            left: 1em;
+        }
+
+        .ms-slide-indicators {
+            list-style: none;
+            position: absolute;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            left: 50%;
+            bottom: 1em;
+            transform: translate(-50%, 0);
+        }
+        
+        .ms-slide-indicators > li {
+            width: 16px;
+            height: 16px;
+            margin: 4px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    
